@@ -3,8 +3,8 @@ import { Feed } from 'feed';
 import { BLOG_TITLE, BLOG_URL } from '../src/constant/meta';
 import { getPostList } from '../src/lib/getStaticData';
 import { writeFileSync } from 'fs';
-const AUTHOR = 'kimjeongwon';
-const EMAIL = 'kimjeongwonn@gmail.com';
+const AUTHOR = 'yoowonyoung';
+const EMAIL = 'yooveloper@gmail.com';
 
 const feed = new Feed({
   title: `${BLOG_TITLE} blog`,
@@ -17,7 +17,7 @@ const feed = new Feed({
     json: `${BLOG_URL}/json`,
     atom: `${BLOG_URL}/atom`,
   },
-  copyright: `All rights reserved since 2020, ${AUTHOR}`,
+  copyright: `All rights reserved since 2025, ${AUTHOR}`,
   author: { name: AUTHOR, email: EMAIL },
 });
 

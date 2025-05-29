@@ -6,20 +6,17 @@ import matter from 'gray-matter';
 
 const getDate = new Date().toISOString();
 
-const YOUR_AWESOME_DOMAIN = 'https://kimjeongwonn.com';
+const YOUR_AWESOME_DOMAIN = 'https://yooveloper.dev';
 
-const formatted = (sitemap: string) =>
-  prettier.format(sitemap, { parser: 'html' });
+const formatted = (sitemap: string) => prettier.format(sitemap, { parser: 'html' });
 
 (async () => {
   const posts = await globby('contents/*.md');
 
   const postsSitemap = `
     ${posts
-      .map(post => {
-        const date = new Date(
-          matter.read(path.join(__dirname, `../${post}`)).data.date
-        );
+      .map((post) => {
+        const date = new Date(matter.read(path.join(__dirname, `../${post}`)).data.date);
         const postPath = post
           .replace('contents/', date.getFullYear() + '/')
           .replace('.md', '')

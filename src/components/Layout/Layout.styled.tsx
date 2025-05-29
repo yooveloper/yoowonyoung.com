@@ -90,5 +90,10 @@ export const LayoutFooterContainer = styled.footer(
     height: 90px;
     text-align: center;
     border-top: 1px ${theme.colors.primaryColor} solid;
+
+    a {
+      text-decoration: underline;
+      color: inherit;
+    }
   `
 );

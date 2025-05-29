@@ -6,17 +6,18 @@ const Comment = () => {
     <CommentSection>
       <Giscus
         id='comments'
-        repo='kimjeongwonn/kimjeongwonn.com'
-        repoId='MDEwOlJlcG9zaXRvcnkzOTQ5NDE3NDM='
+        repo='yooveloper/yoowonyoung.com'
+        repoId='R_kgDOOydaVQ'
         category='Comments'
-        categoryId='DIC_kwDOF4pVL84CifCd'
-        mapping='title'
+        categoryId='DIC_kwDOOydaVc4CquSN'
+        mapping='pathname'
         strict='0'
         reactionsEnabled='1'
         emitMetadata='0'
         inputPosition='bottom'
         theme='light'
         lang='ko'
+        loading='lazy'
       />
     </CommentSection>
   );

@@ -1,2 +1,2 @@
-export const BLOG_TITLE = 'kimjeongwonn';
-export const BLOG_URL = 'https://kimjeongwonn.com';
+export const BLOG_TITLE = 'yoowonyoung';
+export const BLOG_URL = 'https://yooveloper.dev';
