@@ -1,0 +1,8 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "markdown.copyFiles.destination": {
+    "contents/*.md": "${documentWorkspaceFolder}/public/images/${fileName}"
+  },
+  "markdown.links.openLocation": "currentGroup"
+}
+O
