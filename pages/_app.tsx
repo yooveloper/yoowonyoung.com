@@ -13,17 +13,15 @@ function MyApp({ Component, pageProps: { years, ...pageProps } }: AppProps) {
         <Component {...pageProps} />
       </Layout>
 
-      <Script
-        src='https://www.googletagmanager.com/gtag/js?id=G-KR5J2XMG2B'
-        strategy='afterInteractive'
-      />
+      {/* Google Analytics */}
+      <Script src='https://www.googletagmanager.com/gtag/js?id=G-LF9YBKVV4Q' strategy='afterInteractive' />
       <Script id='google-analytics' strategy='afterInteractive'>
         {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-KR5J2XMG2B');
+          gtag('config', 'G-LF9YBKVV4Q');
         `}
       </Script>
     </BlogThemeProvider>

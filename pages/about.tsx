@@ -10,7 +10,7 @@ interface Props {
 const AboutPage: NextPage<Props> = ({ about }: Props) => {
   return (
     <>
-      <NextSeo title='About' description='프론트엔드 개발자 김정원' />
+      <NextSeo title='About' description='프론트엔드 개발자 유원영' />
       <About data={about} />
     </>
   );
